@@ -1,0 +1,14 @@
+diff -uNr gnome-desktop-3.31.3-ori/libgnome-desktop/gnome-desktop-thumbnail-script.c gnome-desktop-3.31.3/libgnome-desktop/gnome-desktop-thumbnail-script.c
+--- gnome-desktop-3.31.3-ori/libgnome-desktop/gnome-desktop-thumbnail-script.c	2018-12-15 17:40:33.361604504 +0800
++++ gnome-desktop-3.31.3/libgnome-desktop/gnome-desktop-thumbnail-script.c	2018-12-15 17:43:02.190306853 +0800
+@@ -537,6 +537,10 @@
+ 
+   add_args (array,
+ 	    "bwrap",
++     "--ro-bind", "/etc", "/etc",
++	    "--ro-bind", "/var", "/var",
++	    "--ro-bind", "/bin", "/bin",
++	    "--ro-bind", "/sbin", "/sbin",
+ 	    "--ro-bind", "/usr", "/usr",
+ 	    NULL);
+ 

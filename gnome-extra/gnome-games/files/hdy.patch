@@ -1,0 +1,12 @@
+diff -uNr gnome-games-3.31.3-ori/src/ui/search-bar.vala gnome-games-3.31.3/src/ui/search-bar.vala
+--- gnome-games-3.31.3-ori/src/ui/search-bar.vala	2018-12-17 04:09:24.817048302 +0800
++++ gnome-games-3.31.3/src/ui/search-bar.vala	2018-12-17 04:10:38.054041735 +0800
+@@ -1,7 +1,7 @@
+ // This file is part of GNOME Games. License: GPL-3.0+.
+ 
+ [GtkTemplate (ui = "/org/gnome/Games/ui/search-bar.ui")]
+-private class Games.SearchBar : Hdy.SearchBar {
++private class Games.SearchBar : HdySearchBar {
+ 	public string text { get; private set; }
+ 
+ 	[GtkChild]

@@ -1,0 +1,24 @@
+diff -uNr libgtop-2.39.91-ori/configure libgtop-2.39.91/configure
+--- libgtop-2.39.91-ori/configure	2019-02-22 16:13:55.543384996 +0800
++++ libgtop-2.39.91/configure	2019-02-22 16:22:13.770644560 +0800
+@@ -13941,7 +13941,7 @@
+ 	  libgtop_need_server=yes
+ 	  libgtop_sysdeps_private_mountlist=yes
+ 	  libgtop_sysdeps_private_fsusage=yes
+-	  libgtop_postinstall='chown root $(bindir)/libgtop_server2 && chmod 4755 $(bindir)/libgtop_server2'
++	  libgtop_postinstall='chown root ${D}$(bindir)/libgtop_server2 && chmod 4755 ${D}$(bindir)/libgtop_server2'
+ 	  ;;
+ 	netbsd*|bsdi*)
+ 	  libgtop_sysdeps_dir=bsd
+diff -uNr libgtop-2.39.91-ori/libgtop-sysdeps.m4 libgtop-2.39.91/libgtop-sysdeps.m4
+--- libgtop-2.39.91-ori/libgtop-sysdeps.m4	2019-02-22 16:13:55.539384903 +0800
++++ libgtop-2.39.91/libgtop-sysdeps.m4	2019-02-22 16:23:53.380776254 +0800
+@@ -36,7 +36,7 @@
+ 	  libgtop_need_server=yes
+ 	  libgtop_sysdeps_private_mountlist=yes
+ 	  libgtop_sysdeps_private_fsusage=yes
+-	  libgtop_postinstall='chown root $(bindir)/libgtop_server2 && chmod 4755 $(bindir)/libgtop_server2'
++	  libgtop_postinstall='chown root ${D}$(bindir)/libgtop_server2 && chmod 4755 ${D}$(bindir)/libgtop_server2'
+ 	  ;;
+ 	netbsd*|bsdi*)
+ 	  libgtop_sysdeps_dir=bsd

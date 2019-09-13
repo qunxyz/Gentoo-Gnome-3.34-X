@@ -1,0 +1,14 @@
+diff -uNr nautilus-3.31.90-ori/src/gnome-desktop/gnome-desktop-thumbnail-script.c nautilus-3.31.90/src/gnome-desktop/gnome-desktop-thumbnail-script.c
+--- nautilus-3.31.90-ori/src/gnome-desktop/gnome-desktop-thumbnail-script.c	2019-02-13 09:54:27.412965865 +0800
++++ nautilus-3.31.90/src/gnome-desktop/gnome-desktop-thumbnail-script.c	2019-02-13 09:57:29.766863953 +0800
+@@ -539,6 +539,10 @@
+ 	    "bwrap",
+ 	    "--ro-bind", "/usr", "/usr",
+ 	    "--ro-bind", "/etc/ld.so.cache", "/etc/ld.so.cache",
++	    "--ro-bind", "/etc", "/etc",
++	    "--ro-bind", "/var", "/var",
++	    "--ro-bind", "/bin", "/bin",
++	    "--ro-bind", "/sbin", "/sbin",
+ 	    NULL);
+ 
+   /* These directories might be symlinks into /usr/... */

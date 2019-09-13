@@ -1,0 +1,12 @@
+diff -uNr gedit-plugins-3.31.90-ori/plugins/codecomment/codecomment.py gedit-plugins-3.31.90/plugins/codecomment/codecomment.py
+--- gedit-plugins-3.31.90-ori/plugins/codecomment/codecomment.py	2019-02-10 23:19:09.967798409 +0800
++++ gedit-plugins-3.31.90/plugins/codecomment/codecomment.py	2019-02-11 00:02:53.366224031 +0800
+@@ -91,7 +91,7 @@
+             view.code_comment_view_activatable.do_comment(view.get_buffer(), unindent)
+ 
+ class CodeCommentViewActivatable(GObject.Object, Gedit.ViewActivatable):
+-
++	__gtype_name__ = "CodeCommentViewActivatable"
+     view = GObject.Property(type=Gedit.View)
+ 
+     def __init__(self):

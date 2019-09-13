@@ -1,0 +1,11 @@
+diff -uNr vte-0.55.0-ori/bindings/vala/app.vala vte-0.55.0/bindings/vala/app.vala
+--- vte-0.55.0-ori/bindings/vala/app.vala	2018-12-23 01:54:53.630430619 +0800
++++ vte-0.55.0/bindings/vala/app.vala	2018-12-23 03:28:01.809472589 +0800
+@@ -819,6 +819,7 @@
+ 
+   public struct Options
+   {
++    public int dummy;
+     public static bool audible = false;
+     public static string? command = null;
+     private static string? cjk_ambiguous_width_string = null;

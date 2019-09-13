@@ -1,0 +1,12 @@
+diff -uNr cairomm-1.15.5-ori/configure.ac cairomm-1.15.5/configure.ac
+--- cairomm-1.15.5-ori/configure.ac	2019-06-24 14:33:21.890143450 +0800
++++ cairomm-1.15.5/configure.ac	2019-06-24 15:04:04.660512025 +0800
+@@ -37,7 +37,7 @@
+ AC_SUBST([CAIROMM_SO_VERSION], [5:0:4])
+ 
+ AC_PROG_CXX
+-MM_AX_CXX_COMPILE_STDCXX([14],[noext],[mandatory])
++MM_AX_CXX_COMPILE_STDCXX([17],[noext],[mandatory])
+ 
+ AC_DISABLE_STATIC
+ AC_LIBTOOL_WIN32_DLL

@@ -1,0 +1,11 @@
+diff -uNr libsoup-2.65.90-ori/meson.build libsoup-2.65.90/meson.build
+--- libsoup-2.65.90-ori/meson.build	2019-02-10 00:29:27.711326178 +0800
++++ libsoup-2.65.90/meson.build	2019-02-10 02:13:53.870801631 +0800
+@@ -275,7 +275,6 @@
+ ############
+ enable_vapi = get_option('vapi')
+ if enable_vapi
+-  assert(enable_introspection, 'vapi support was requested, but introspection support is mandatory.')
+   assert(add_languages('vala', required: false), 'vapi support was requested, but vala not found.')
+ endif
+ 
